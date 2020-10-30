@@ -6,7 +6,7 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
-DATA_URL = ("/MotorCrashes.csv")
+DATA_URL = ("/MotorCrashes10000.csv")
 
 st.title("Motor Vehicle Collisions in New York City")
 st.markdown("This application is a Streamlit dashboard than can be used to analyze motor vehicle collisions in NYC.")
@@ -20,7 +20,7 @@ def load_data(nrows):
 	data.rename(columns={'crash_date_crash_time':'date/time'}, inplace=True)
 	return data
 
-data = load_data(3000)
+data = load_data(5000)
 original_data = data
 
 st.header("Where are the most people injured in NYC?")
