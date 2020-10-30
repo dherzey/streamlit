@@ -6,7 +6,7 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
-DATA_URL = ("MotorCrashes10000.csv")
+DATA_URL = ("https://raw.githubusercontent.com/dherzey/streamlit/main/MotorCrashes10000.csv")
 
 st.title("Motor Vehicle Collisions in New York City")
 st.markdown("This application is a Streamlit dashboard than can be used to analyze motor vehicle collisions in NYC.")
